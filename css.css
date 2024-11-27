@@ -1,0 +1,368 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed; /* Barre fixée en haut */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    background-color: whitesmoke; /* Couleur de fond de la barre */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'effet */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+  }
+  
+  .conteneur {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Espacement entre logo et liens */
+    align-items: center; /* Aligne les éléments verticalement */
+    max-width: 1200px; /* Limite la largeur de la barre */
+    margin: 0 auto; /* Centre le contenu */
+    padding: 0 20px; /* Espacement sur les côtés */
+  }
+  
+  .logo img {
+    height: 50px; /* Taille moyenne pour le logo */
+    width: auto; /* Garde les proportions */
+  }
+  
+  .nav-link {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Aligne les liens horizontalement */
+    gap: 20px; /* Espacement entre les liens */
+  }
+  
+  .nav-link li a {
+    color: black; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 16px;
+    transition: color 0.3s; /* Effet de transition pour le survol */
+  }
+  
+  .nav-link li a:hover {
+    color: #f9f9f9; /* Couleur plus claire au survol */
+  }
+  
+  /* Section accroche */
+.accrohe {
+  padding: 2rem; /* Espacement global pour la section */
+  background-color: #ffffff; /* Couleur de fond douce */
+}
+
+/* Image centrée et redimensionnée */
+#graph img {
+  max-width: 150px; /* Taille réduite de l'image */
+  height: auto; /* Maintient les proportions */
+  display: block; /* Convertit l'image en block */
+  margin: 0 auto; /* Centre horizontalement */
+}
+
+/* Titre centré */
+.accrohe h1 {
+  font-size: 24px; /* Taille du titre */
+  margin-top: 1rem; /* Espacement au-dessus du titre */
+  margin-bottom: 2rem; /* Espacement en dessous du titre */
+  color: #00ccb1; /* Couleur du texte */
+  text-align: center; /* Centre le texte */
+}
+
+/* Grille pour aligner les colonnes */
+.grid {
+  display: flex; /* Grille avec Flexbox */
+  justify-content: space-between; /* Espace entre les colonnes */
+  align-items: flex-start; /* Aligne les colonnes au sommet */
+  max-width: 1000px; /* Largeur maximale pour centrer le contenu */
+  margin: 0 auto; /* Centre la grille sur la page */
+  gap: 2rem; /* Espacement entre les colonnes */
+}
+
+/* Styles pour les colonnes */
+.grid .col-2 {
+  flex: 1; /* Chaque colonne prend une taille égale */
+  max-width: 50%; /* Limite chaque colonne à 50% de la largeur */
+}
+
+.grid .col-2:nth-child(1) {
+  text-align: left; /* Texte aligné à gauche pour la 1ère colonne */
+}
+
+.grid .col-2:nth-child(2) {
+  text-align: right; /* Texte aligné à droite pour la 2ème colonne */
+}
+
+/* Section principale */
+.col-3 {
+  display: flex; /* Affiche les colonnes en ligne */
+  justify-content: space-around; /* Espacement égal entre les blocs */
+  margin: 2rem auto; /* Espacement autour des blocs */
+  gap: 1rem; /* Espacement entre les colonnes */
+  flex-wrap: wrap; /* Permet de passer à la ligne sur petits écrans */
+}
+
+/* Styles pour chaque bloc */
+.service-items {
+  background-color: white; /* Couleur par défaut */
+  padding: 1rem; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+  width: 250px; /* Largeur fixe pour chaque bloc */
+  text-align: center; /* Texte centré */
+}
+
+/* Couleurs spécifiques pour chaque bloc */
+.service-items:nth-child(1) {
+  background-color: #1ec9af; /* Bleu clair */
+}
+
+.service-items:nth-child(2) {
+  background-color: #3d83df; /* Vert clair */
+}
+
+.service-items:nth-child(3) {
+  background-color: #313c48; /* Jaune clair */
+}
+
+/* Style pour l'image */
+.service-items img {
+  width: 24px; /* Largeur fixe */
+  height: 24px; /* Hauteur fixe */
+  margin-bottom: 1rem; /* Espacement en bas de l'image */
+}
+
+/* Styles pour les titres */
+.service-items h1 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.service-items h2 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Listes déroulantes */
+.select select {
+  width: 100%; /* Prend toute la largeur disponible */
+  padding: 0.5rem; /* Espacement interne du texte */
+  margin-top: 0.5rem; /* Espacement au-dessus */
+  border: none; /* Supprime les bordures */
+  background-color: transparent; /* Fond transparent */
+  font-size: 14px; /* Taille du texte */
+  color: whitesmoke; /* Texte lisible */
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #eaf7f7;
+  gap: 20px;
+}
+
+/* Colonne gauche */
+.left-side {
+  flex: 1;
+  max-width: 45%; /* Limite la largeur à 45% de l'écran */
+  text-align: left;
+}
+
+.left-side .content h1 {
+  font-size: 2rem;
+  color: #00ccb1;
+  margin-bottom: 20px;
+}
+
+.left-side .content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.left-side .image-container img {
+  width: 100%;
+  max-width: 700px; /* Augmenter la taille de l'image */
+  margin-top: 10px; /* Descendre l'image un peu vers le bas */
+  display: block;
+  margin-left: auto; /* Centrer l'image horizontalement */
+  margin-right: 200px;
+  margin-bottom: 10px;
+}
+
+
+/* Colonne droite */
+.right-side {
+  flex: 1;
+  max-width: 45%; /* Limite la largeur à 45% de l'écran */
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Styles des cartes */
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-card .icon {
+  font-size: 2rem;
+  color: #00ccb1;
+  margin-bottom: 15px;
+}
+
+.stat-card h2 {
+  font-size: 1.2rem;
+  color: #00ccb1;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.intro-section {
+  background-color: #ffffff; /* Fond blanc pour la section */
+  text-align: center; /* Centrer le texte */
+  padding: 50px 20px; /* Espacement autour du texte */
+  max-width: 1200px;
+  margin: 0 auto; /* Centrer la section dans la page */
+}
+
+.intro-section h1 {
+  font-size: 30px;
+  color: #00ccb1; /* Couleur turquoise */
+  margin-bottom: 20px; /* Espacement en dessous du titre */
+}
+
+.intro-section p {
+  font-size: 16px;
+  color: #333333; /* Couleur du texte */
+  line-height: 1.5; /* Espacement entre les lignes du texte */
+  margin: 0 auto;
+  max-width: 800px; /* Limiter la largeur du paragraphe */
+}
+
+.cities-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.city-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.city-card:hover {
+  transform: translateY(-10px);
+}
+
+.city-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.city-card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.city-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ccb1;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.city-card .btn:hover {
+  background-color: #009f93;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Couleur de fond si nécessaire */
+}
+
+.cta-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-container p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta-container button {
+  background-color: #4285f4; /* Couleur du bouton */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-container button:hover {
+  background-color: #3367d6; /* Couleur au survol */
+}
+
+
+.footer {
+  background-color: #f9f9f9; /* Couleur de fond */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.footer-content a {
+  color: #4285f4; /* Couleur des liens */
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #999;
+}
